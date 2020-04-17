@@ -1,0 +1,81 @@
+<div class="container" id="cardd" style=" padding-right:1rem; width: 100%;">
+    <div class="row">
+
+
+        <div class="col s6">
+            {{#each programmes}}
+            <div class="card Medium">
+
+
+                <div class=" card-image">
+                    <img src="../layouts/images/{{programme_img}}">
+                    <a href="/programmes/edit/{{id}}" class="btn-floating halfway-fab waves-effect waves-light blue"
+                        id="ajouter"><i class="material-icons foto">create</i></a>
+                    <form action="/programmes/{{id}}?_method=DELETE" method="post">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" value="delete"
+                            class="btn-floating halfway-fab waves-effect waves-light red">
+                            <i class="material-icons foto">delete</i> </button>
+                    </form>
+                </div>
+
+                <div class="card-content produits_items" style="margin-top: 0;">
+                    <p> <span class="card_items"> Nom du Programme :</span> {{nom_programme}}</p>
+                    <p> <span class="card_items"> Duree d'entrainement :</span> {{duree_ent}} </p>
+                    <p> <span class="card_items"> Niveau :</span> {{niveau}}</p>
+                    <p> <span class="card_items"> Numero des exercices :</span> {{num_ex_total}}</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="color:  rgb(32, 32, 139); font-size: 1rem;">Exercice</th>
+                                <th style="color:  rgb(32, 32, 139); font-size: 1rem;">Séries</th>
+                                <th style="color: rgb(32, 32, 139); font-size:  1rem;">Répétitions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td style="font-size: 1rem;">{{num_ex_01.nom_ex}}</td>
+                                <td style="font-size: 1rem; color: white;">{{num_ex_01.num_ser}}</td>
+                                <td style="font-size: 1rem; color: white;">{{num_ex_01.num_rep}} </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 1rem;">{{num_ex_02.nom_ex}}</td>
+                                <td style="font-size: 1rem; color: white;">{{num_ex_02.num_ser}}</td>
+                                <td style="font-size: 1rem; color: white;">{{num_ex_02.num_rep}} </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 1rem;">{{num_ex_03.nom_ex}}</td>
+                                <td style="font-size: 1rem; color: white;">{{num_ex_03.num_ser}}</td>
+                                <td style="font-size: 1rem; color: white;">{{num_ex_03.num_rep}} </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 1rem;">{{num_ex_04.nom_ex}}</td>
+                                <td style="font-size: 1rem; color: white;">{{num_ex_04.num_ser}}</td>
+                                <td style="font-size: 1rem; color: white;">{{num_ex_04.num_rep}} </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+
+                </div>
+            </div>
+
+
+            {{else}}
+
+
+            <h3 style="color: red; text-align:center;">
+                pas de programmes ...
+            </h3>
+
+
+
+            {{/each}}
+        </div>
+    </div>
+</div>

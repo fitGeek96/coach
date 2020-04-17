@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* SIDEBAR CONTENT  */
+
+a {
+  display: block;
+  margin-left: 1rem;
+  text-decoration: none !important;
+  color: silver !important;
+}
+
+a:hover {
+  color: tomato !important;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 3rem;
+  word-spacing: .4rem;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: -2px 6px 3px rgba(0, 0, 0, 0.95);
+  font-size: 4rem !important;
+}
+
+h4 {
+  text-align: center;
+}
+
+i {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+
+span {
+  font-size: .7rem;
+}
+
+#form .row .cat {
+  font-size: .7rem;
+}
+
+
+.row {
+  margin-bottom: 0 !important;
+}
+
+.row .col.l3 {
+  height: 100%;
+  width: 25%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+  padding-bottom: 52%;
+  color: white;
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.item {
+  display: block;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+/* MAIN CONTENT */
+
+p {
+  color: darkgray;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.addd {
+  margin: 0 1rem;
+  padding-top: 0.4rem;
+  color: black !important;
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: yellow !important;
+  color: black !important;
+}
+
+.container {
+  text-align: center;
+  padding: 7% 15%;
+  width: 90% !important;
+}
+
+.row .col.l9 {
+  padding: 0;
+}
+
+.nav-wrapper ul li a {
+  text-decoration: none;
+  color: whitesmoke !important;
+}
+
+.material-icons {
+  color: whitesmoke;
+}
+
+.nav-wrapper {
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.row .col.l9 #dropdown1 li a {
+  color: teal !important;
+}
+
+/* FORNULAIRE */
+
+.row .col.s7 {
+  width: 100% !important;
+  text-align: left;
+}
+
+.foto {
+  font-size: 1.5rem;
+  color: white;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: black !important;
+}
+
+.card_items {
+  color: black;
+  text-align: left !important;
+}
+
+.card {
+  margin: 1rem 0 0 0 !important;
+  position: relative;
+  display: inline-block;
+}
+
+.card-content {
+  margin-top: .7rem;
+}
+
+.card-content p {
+  font-size: 1.1em;
+}
+
+#form {
+  padding: 0% 15%;
+}
+
+#ajouter {
+  margin-right: 3rem;
+}
+
+#vip {
+  margin-right: 6rem;
+}
+
+#cardd {
+  padding: 1rem 19rem 1rem 1rem;
+  margin: 0;
+  font-size: 0.7rem;
+  display: inline-block;
+}
+
+
+
+/* search bar */
+
+input.search-field {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.54);
+  border-radius: 2px;
+  border: 0;
+  border-radius: 5px;
+  height: 36px;
+  padding: 8px 8px 8px 60px;
+  width: 200px;
+  background: #96a0f6;
+  transition: background 0.2s, width .2s;
+}
+
+input.search-field:hover {
+  background: #ebebeb;
+}
+
+.searchbox {
+  position: relative;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.54);
+}
+
+input.search-field:focus {
+  outline: none;
+  width: 500px;
+  color: #212121;
+}
+
+input.search-field:focus:hover {
+  background: #fbff00;
+}
+
+.search-icon {
+  position: absolute;
+  top: 0;
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.search-content {
+  color: #303c42;
+  width: 90%;
+  margin: auto;
+  height: auto;
+  padding: 8px 10px;
+}
+
+.search-heading {
+  color: #757575;
+  display: block;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.produits_items p {
+  color: whitesmoke;
+
+}
+
+.produits_items {
+  background: #fe8c00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #f83600, #fe8c00);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #f83600, #fe8c00);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.card p {
+  text-align: left !important;
+}
+
+input {
+  text-align: left !important;
+}
+
+
+/* emploi du temps */
+
+
+
+
+#jours {
+  color: tomato;
+}
+
+#table.centered tbody tr td {
+  padding: 0 2rem;
+}
+
+
+#table {
+  margin: 3rem 0 0 2rem;
+  padding: 0;
+
+}
+
+#table p {
+  text-align: center !important;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+#table.centered p {
+  width: 100% !important;
+  display: inline-flex !important;
+  text-align: center !important;
+  padding: 0;
+}
+
+
+#table .btn-floating.halfway-fab {
+  position: relative !important;
+}
+
+#table .change_time {
+  font-size: 1rem;
+  margin-right: 10rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+#table .time_edit {
+  width: 50%;
+  display: flex;
+}
+
+
+
+#table .btn-floating i {
+
+  font-size: 1rem !important;
+  line-height: 0 !important;
+}
+
+.emploi_temp {
+  -webkit-box-shadow: 2px 2px 15px 5px #000000;
+  box-shadow: 2px 2px 15px 5px #000000;
+}
+
+
+
+/* rapports */
+
+
+
+.produit {
+  -webkit-box-shadow: 2px 2px 15px 5px #000000;
+  box-shadow: 2px 2px 15px 5px #000000;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+
+}
+
+textarea {
+  margin-bottom: 5rem !important;
+}

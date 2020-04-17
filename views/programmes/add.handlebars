@@ -1,0 +1,178 @@
+<div class="container produit" id="form">
+
+
+    <div class="row">
+        <form class="col s12" action="/programmes" method="POST">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Saisir le nom" id="first_name" type="text" class="validate" name="nom_programme"
+                        required oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                        oninput="setCustomValidity('')">
+                    <label for="nomp">Nom du Programme</label>
+
+                </div>
+                <div class="input-field col s6">
+                    <input id="text" type="number" class="validate" name="duree_ent" required
+                        oninvalid="this.setCustomValidity('Veuillez saisir une duree d'entrainement en semaines, Baliz!')"
+                        oninput="setCustomValidity('')">
+                    <label for="np">Duree du programme (en semaines)</label>
+                    <span class="helper-text" data-error="Invalid" data-success=""></span>
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="input-field col s6">
+                        <input id="text" type="text" class="validate" name="num_ex_total" required
+                            oninvalid="this.setCustomValidity('Veuillez saisir un numeros des exercice pour ce programme, Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="np">Numeros total des exercices</label>
+                        <span class="helper-text" data-error="Invalid" data-success=""></span>
+                    </div>
+                    <div class="input-field col s6">
+                        <select multiple name="niveau">
+                            <option value="" disabled selected>Choississez le niveau</option>
+                            <option value="Debutant">Debutant</option>
+                            <option value="intermédiaire">intermédiaire</option>
+                            <option value="Professionel">Professionel</option>
+                        </select>
+                        <label>Niveau</label>
+                    </div>
+
+                </div>
+
+
+
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input placeholder="Saisir le nom" id="first_name" type="text" class="validate"
+                            name="num_ex_01_nom_ex" required
+                            oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="nomp">Exercice 01</label>
+
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Saisir le nom" id="first_name" type="number" class="validate"
+                            name="num_ex_01_num_ser" required
+                            oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="nomp">Numero de Series</label>
+
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Saisir le nom" id="first_name" type="number" class="validate"
+                            name="num_ex_01_num_rep" required
+                            oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="nomp">Numero de Repetiton</label>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input placeholder="Saisir le nom" id="first_name" type="text" class="validate"
+                            name="num_ex_02_nom_ex" required
+                            oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="nomp">Exercice 02</label>
+
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Saisir le nom" id="first_name" type="number" class="validate"
+                            name="num_ex_02_num_ser" required
+                            oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="nomp">Numero de Series</label>
+
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Saisir le nom" id="first_name" type="number" class="validate"
+                            name="num_ex_02_num_rep" required
+                            oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="nomp">Numero de Repetiton</label>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input placeholder="Saisir le nom" id="first_name" type="text" class="validate"
+                            name="num_ex_03_nom_ex" required
+                            oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="nomp">Exercice 03</label>
+
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Saisir le nom" id="first_name" type="number" class="validate"
+                            name="num_ex_03_num_ser"
+                            oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="nomp">Numero de Series</label>
+
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Saisir le nom" id="first_name" type="number" class="validate"
+                            name="num_ex_03_num_rep"
+                            oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="nomp">Numero de Repetiton</label>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input placeholder="Saisir le nom" id="first_name" type="text" class="validate"
+                            name="num_ex_04_nom_ex"
+                            oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="nomp">Exercice 04</label>
+
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Saisir le nom" id="first_name" type="number" class="validate"
+                            name="num_ex_04_num_ser"
+                            oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="nomp">Numero de Series</label>
+
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Saisir le nom" id="first_name" type="number" class="validate"
+                            name="num_ex_04_num_rep"
+                            oninvalid="this.setCustomValidity('Veuillez saisir un Nom pour ce programme , Baliz!')"
+                            oninput="setCustomValidity('')">
+                        <label for="nomp">Numero de Repetiton</label>
+
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="file-field input-field">
+                        <div class="btn waves-effect waves-light cyan darken-3">
+                            <i class="large material-icons foto">add_a_photo</i>
+                            <input type="file" name="programme_img" required
+                                oninvalid="this.setCustomValidity('Veuillez inserer une image!')"
+                                oninput="setCustomValidity('')">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <button class="btn waves-effect waves-light cyan darken-3 foto" type="submit" name="action">Ajouter au
+                    stock
+                    <i class="material-icons right foto">send</i>
+                </button>
+
+        </form>
+    </div>
+
+</div>
